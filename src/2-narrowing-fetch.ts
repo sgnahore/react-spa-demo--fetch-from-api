@@ -8,7 +8,7 @@ interface Joke {
 }
 
 function printGeneralJoke() {
-  fetch("https://official-joke-api.appspot.com/jokes/general/random")
+  fetch("https://jokestemp.neillbogie.repl.co/jokes/general/random")
     .then((response) => response.json())
     .then((jsonBody: Joke[]) => {
       /** TS now treats jsonBody like an array */
@@ -18,7 +18,7 @@ function printGeneralJoke() {
 
 async function printProgrammingJoke() {
   const response = await fetch(
-    "https://official-joke-api.appspot.com/jokes/programming/random"
+    "https://jokestemp.neillbogie.repl.co/jokes/programming/random"
   );
   const jsonBody: Joke[] = await response.json();
   /** TS now treats jsonBody like an array */

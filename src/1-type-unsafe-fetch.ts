@@ -17,7 +17,7 @@ function printExampleJoke() {
 }
 
 function printGeneralJoke() {
-  fetch("https://official-joke-api.appspot.com/jokes/general/random")
+  fetch("https://jokestemp.neillbogie.repl.co/jokes/general/random")
     .then((response) => response.json())
     .then((jsonBody) => {
       // console.log(jsonBody) /* de-comment to troubleshoot */
@@ -28,7 +28,7 @@ function printGeneralJoke() {
 
 async function printProgrammingJoke() {
   const response = await fetch(
-    "https://official-joke-api.appspot.com/jokes/programming/random"
+    "https://jokestemp.neillbogie.repl.co/jokes/programming/random"
   );
   const jsonBody = await response.json();
   // console.log(jsonBody) /* de-comment to troubleshoot */
