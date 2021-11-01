@@ -19,7 +19,7 @@ We'll now look at how both Promise callbacks and `async`/`await` can be used to 
 
 `fetch` is a function which is commonly used to get data from an existing API into a front-end app. (It is available by default in modern browsers. Outside the browser environment, in Node, we're using the [`node-fetch` library](https://github.com/node-fetch/node-fetch) to simulate it.)
 
-In this demo, we'll be using it to get data from [this joke API](https://github.com/15Dkatz/official_joke_api). If you open the documented links in your browser (e.g. ["Grab a random joke!"](https://official-joke-api.appspot.com/random_joke)), you'll see a JSON response such as:
+In this demo, we'll be using it to get data from [this joke API](https://github.com/15Dkatz/official_joke_api). If you open the documented links in your browser (e.g. ["Grab a random joke!"](https://jokestemp.neillbogie.repl.co/random_joke)), you'll see a JSON response such as:
 
 ```json
 {
@@ -107,7 +107,7 @@ So, why is `Response.json()` typed as `any`?
 
 Well, we saw in Exercise 0 that `fetch` can get data from an arbitrary API, which can come back in very different forms and shapes. For example, [PokéApi](https://pokeapi.co/) returns JSON data that has entirely different properties to the Joke API.
 
-What this means is that `fetch("https://official-joke-api.appspot.com/jokes/general/random")` and `fetch("https://pokeapi.co/api/v2/pokemon/ditto")` are ultimately going to return very different shapes of data - but it's impossible for us to know purely from the URL what form of data we might get back.
+What this means is that `fetch("https://jokestemp.neillbogie.repl.co/jokes/general/random")` and `fetch("https://pokeapi.co/api/v2/pokemon/ditto")` are ultimately going to return very different shapes of data - but it's impossible for us to know purely from the URL what form of data we might get back.
 
 All that TypeScript can see is a `fetch` and a string URL - which means that TypeScript is also in the dark about what shape of data is going to come back.
 
