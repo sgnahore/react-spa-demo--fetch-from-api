@@ -19,7 +19,7 @@ We'll now look at how both Promise callbacks and `async`/`await` can be used to 
 
 `fetch` is a function which is commonly used to get data from an existing API into a front-end app. (It is available by default in modern browsers. Outside the browser environment, in Node, we're using the [`node-fetch` library](https://github.com/node-fetch/node-fetch) to simulate it.)
 
-In this demo, we'll be using it to get data from [this joke API](https://github.com/15Dkatz/official_joke_api). If you open the documented links in your browser (e.g. ["Grab a random joke!"](https://jokestemp.neillbogie.repl.co/random_joke)), you'll see a JSON response such as:
+In this demo, we'll be using it to get data from [this joke API](https://github.com/15Dkatz/official_joke_api). As the original hosted API is malfunctioning, we've made a mirror of it and documented the new URLs [here](https://www.notion.so/weareacademy/Replacement-Joke-API-6604cb257c4e4780bad404f53cb08623). If you open the documented links in your browser (e.g. ["Grab a random joke!"](https://jokestemp.neillbogie.repl.co/random_joke)), you'll see a JSON response such as:
 
 ```json
 {
