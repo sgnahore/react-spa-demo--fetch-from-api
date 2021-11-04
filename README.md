@@ -51,7 +51,7 @@ and see what comes back again.
 
 We've been using TypeScript and enjoying the benefits of static type safety which it gives to us, which [ordinary JavaScript lacks](https://github.com/WeAreAcademy/mark-fundamentals-proj--ts-hello-typescript).
 
-For example, in demo 1's `printExampleJoke`, TypeScript stops us from trying to read the `setup` and `punchline` properties of our `jokeResponse` variable - it can see that it's an array. However, it will let us read `jokeResponse[0].setup` and `jokeResponse[1].punchline` - so, comment out the line with type errors, run the demo, and you'll see our joke output in the terminal.
+For example, in demo 1's `printExampleJoke`, TypeScript stops us from trying to read the `setup` and `punchline` properties of our `jokeResponse` variable - it can see that it's an array. However, it will let us read `jokeResponse[0].setup` and `jokeResponse[0].punchline` - so, comment out the line with type errors, run the demo, and you'll see our joke output in the terminal.
 
 Unfortunately... we get no such help from TypeScript in `printGeneralJoke` and `printProgrammingJoke`, when we `fetch` data from the Joke API. If you try running either, you'll see `undefined` get spit out into the terminal.
 
