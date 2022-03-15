@@ -49,7 +49,8 @@ and see what comes back again.
 
 > 🎯 **Success criterion:** You can explain the lack of type safety in `any` and in `fetch`
 
-We've been using TypeScript and enjoying the benefits of static type safety which it gives to us, which [ordinary JavaScript lacks](https://github.com/WeAreAcademy/mark-fundamentals-proj--ts-hello-typescript).
+We've been using TypeScript and enjoying the benefits of static type safety which it gives to us, which ordinary JavaScript lacks (as explained here re: [dynamic typing](https://github.com/WeAreAcademy/mark-fundamentals-proj--ts-hello-typescript#:~:text=and%20weak%20typing\)%3A-,Dynamic%20typing,-In%20JavaScript%2C%20we) and
+[weak typing](https://github.com/WeAreAcademy/mark-fundamentals-proj--ts-hello-typescript#:~:text=in%20our%20code!-,Weak%20typing,-In%20JavaScript%2C%20we).
 
 For example, in demo 1's `printExampleJoke`, TypeScript stops us from trying to read the `setup` and `punchline` properties of our `jokeResponse` variable - it can see that it's an array. However, it will let us read `jokeResponse[0].setup` and `jokeResponse[0].punchline` - so, comment out the line with type errors, run the demo, and you'll see our joke output in the terminal.
 
@@ -111,7 +112,7 @@ What this means is that `fetch("https://jokestemp.neillbogie.repl.co/jokes/gener
 
 All that TypeScript can see is a `fetch` and a string URL - which means that TypeScript is also in the dark about what shape of data is going to come back.
 
-Now, there is a type for this - the [`unknown` type](https://www.typescriptlang.org/docs/handbook/basic-types.html#unknown), which is intended _exactly_ for this purpose of 'who knows what this is - be careful with it!'.
+Now, there is a type for this - the [`unknown` type](https://www.typescriptlang.org/docs/handbook/2/functions.html#unknown), which is intended _exactly_ for this purpose of 'who knows what this is - be careful with it!'.
 
 `Promise<unknown>` would be a _great_ return typing for `Response.json()`. Unfortunately, it's typed as `Promise<any>`.
 
