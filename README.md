@@ -30,7 +30,7 @@ In this demo, we'll be using it to get data from [this joke API](https://github.
 }
 ```
 
-By drawing on APIs, we can load data (like jokes, [dog pictures](https://dog.ceo/dog-api/) or [Kanye West quotes](https://kanye.rest/)) into our front-end apps.
+By drawing on APIs, we can load data (like jokes, [dog pictures](https://dog.ceo/dog-api/) or [Kanye West quotes](https://kanye.rest/)) into our front-end apps. (Note: you may get a 525 error when clicking on the link to the Kanye West quotes, this is a known error and should be resolved by continuing to refresh the page) 
 
 ### Using `fetch`
 
