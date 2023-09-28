@@ -10,7 +10,7 @@ interface Joke {
 function printGeneralJoke() {
   fetch("https://jokestemp.neillbogie.repl.co/jokes/general/random")
     .then((response) => response.json())
-    .then((jsonBody: Joke[]) => {
+    .then((jsonBody: boolean) => {
       /** TS now treats jsonBody like an array */
       console.log(jsonBody.setup, jsonBody.punchline);
     });

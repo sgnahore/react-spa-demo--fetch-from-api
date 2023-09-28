@@ -1,7 +1,7 @@
 import fetch from "node-fetch";
 
 function demoFetchWithThen() {
-  fetch("https://jokestemp.neillbogie.repl.co/jokes/general/random")
+  fetch("https://api.kanye.rest/")
     .then((res) => res.json())
     .then((res) => console.log(res));
 }
@@ -14,5 +14,5 @@ async function demoFetchWithAwait() {
   console.log(jsonBody);
 }
 
-demoFetchWithThen();
-// demoFetchWithAwait();
+//demoFetchWithThen();
+demoFetchWithAwait();
